@@ -1,0 +1,19 @@
+# -----------------------
+# | Add Python packages |
+# -----------------------
+# To install below packages at startup, uncomment this line in "docker-compose.yml" file!
+# - ./entrypoint.sh:/entrypoint.sh
+# then down the docker container ($ docker-compose down) and up it again ($ docker-compose up -d).
+# -----------------------
+odoo-addon-purchase-request==18.0.2.3.0.3
+odoo-addon-purchase-request-tier-validation==18.0.1.1.1.3
+odoo-addon-base-tier-validation==18.0.2.0.1
+dbfread==2.0.7
+xlsxwriter==3.2.5
+xlrd==2.0.2
+odoo-addon-report-xlsx==18.0.1.0.0.3
+odoo-addon-report-xlsx-helper==18.0.1.0.0.2
+pytest==8.4.1
+pytest-odoo==2.1.3
+pytest-cov==6.2.1
+odoo-addon-account-invoice-triple-discount==18.0.1.0.0.6
