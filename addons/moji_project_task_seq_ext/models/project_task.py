@@ -9,6 +9,20 @@ class ProjectTask(models.Model):
         readonly=True,
         index=True,
     )
+    priority = fields.Selection(
+        [
+            ("0", "Very Low"),
+            ("1", "Low"),
+            ("2", "Medium"),
+            ("3", "High"),
+            ("4", "Very High"),
+            ("5", "Critical"),
+        ],
+        default="0",
+        index=True,
+        string="Priority",
+        tracking=True,
+    )
 
     @api.model_create_multi
     def create(self, vals_list):
